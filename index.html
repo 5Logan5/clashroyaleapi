@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale API</title>
+</head>
+
+<body>
+
+    <script>
+    
+    var url = "https://api.clashroyale.com/v1/players/%23R90RL8G9";
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+
+xhr.setRequestHeader("Accept", "application/json");
+xhr.setRequestHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImViMDhjZGMzLWFhOTItNDI2Zi1iODM5LWRiYWQwZWFmMGIxMyIsImlhdCI6MTYzMzIzNzk4NSwic3ViIjoiZGV2ZWxvcGVyLzE2M2Q0NjcwLTkyOWUtYTA4Ny0zODYzLWYzNDU4NDljOTEyMiIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI1MC41LjguMTQ2Il0sInR5cGUiOiJjbGllbnQifV19.GKzOkdPXtBocBz6Y3atDAd0CoNrc2Stqvur4O62OHwNUpzX3-dlqS0eKTCBsz_IpK7toOGHP-wCOa7QtDw_JCg");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+xhr.send();
+    </script>
+
+
+</body>
+
+</html>
